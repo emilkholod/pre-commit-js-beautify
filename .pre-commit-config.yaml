@@ -1,10 +1,9 @@
 -   id: js-beautify
     name: js-beautify
     entry: js-beautify
-    language: node
-    files: \.js$
+    files: \.xml$
     args: []
 
     # Use additional_dependencies to install the actual node package
-    additional_dependencies: ['js-beautify@1.6.2']
+    additional_dependencies: []
     minimum_pre_commit_version: 0.7.0
