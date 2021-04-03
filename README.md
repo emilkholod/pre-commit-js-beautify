@@ -8,16 +8,15 @@ For js-beautify: see https://github.com/emilkholod/js-beautify-guidelines
 
 Add this to your `.pre-commit-config.yaml`:
 ```yaml
-    -   repo: https://github.com/emilkholod/js-beautify-guidelines.git
-        sha: ''  # Use the sha you want to point at
-        hooks:
-        -   id: js-beautify
+-   repo: https://github.com/emilkholod/js-beautify-guidelines
+    rev: ''
+    hooks:
+    -   id: js-beautify
         args: [
             '--type=html',
             '--replace',
             '--end-with-newline',
             '--indent-size=4',
-            '--indent-char= ',
             '--max-preserve-newlines=10',
             '--preserve-newlines=true',
             '--wrap-attributes=force-aligned',
